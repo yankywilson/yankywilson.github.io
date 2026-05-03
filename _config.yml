@@ -1,0 +1,43 @@
+title: YWilson — Threat Intelligence Notes
+email: # leave blank or add your CTI email when ready
+description: >-
+  Independent threat intelligence research. Phishing-to-RAT campaigns,
+  rogue RMM abuse, infrastructure mapping, and detection signatures.
+baseurl: ""
+url: "https://yankywilson.github.io"
+github_username: yankywilson
+
+# Theme — minima is GitHub Pages' default, no install needed
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/yankywilson" }
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Default front matter for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: YWilson
+
+# Don't process these
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# Show recent posts on home
+show_excerpts: true

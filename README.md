@@ -18,7 +18,6 @@ With front matter like:
 
 ```yaml
 ---
----
 layout: post
 title: "One kit, many flags: the distributed EtherHiding builder that North Korea and Iran are both renting"
 date: 2026-06-15 12:00:00 -0400

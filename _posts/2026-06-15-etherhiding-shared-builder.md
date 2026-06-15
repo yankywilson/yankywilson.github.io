@@ -1,12 +1,12 @@
 ---
+layout: post
 title: "One kit, many flags: the distributed EtherHiding builder that North Korea and Iran are both renting"
 date: 2026-06-15 12:00:00 -0400
-categories: [Threat Intelligence]
+categories: [threat-intelligence]
 tags: [etherhiding, etherrat, tsundere, muddywater, dprk, blockchain-c2, maas, on-chain, ioc, detection-engineering]
-description: "On-chain enumeration of a distributed EtherHiding C2 resolver kit — 24+9 contracts, ~30 operators — and the evidence that DPRK and Iranian state-aligned operators are independently renting the same most-likely-Russian builder. Shared supplier, independent customers."
-toc: true
+excerpt: >-
+  DPRK and Iranian operators are independently renting the same most-likely-Russian EtherHiding C2 kit. Shared supplier, independent customers.
 ---
-
 > **TL;DR.** Public reporting describes EtherHiding C2 as a contract here, a contract there. It is not. On-chain, it is a single **builder kit** — 24 byte-identical and 9 variant resolver contracts on Ethereum mainnet, written to by roughly 30 operator wallets, fronting 52 live panels. Two of those operators are state-aligned: **North Korea** (the EtherRAT backdoor) and **Iran** (MuddyWater, deploying the Tsundere botnet). Both run the same resolver kit, bound by the same on-chain event-topic anchor and the same bytecode. The kit's lineage most likely traces to the **Russian-speaking criminal MaaS ecosystem**. This is not a North Korea–Iran partnership. It is two government programs shopping at the same criminal store — and the blockchain they chose for resilience has quietly become a permanent ledger of who shopped, when, and for what. Detection pack and full assessment: [`etherhiding-etherrat-kit`](https://github.com/yankywilson/etherhiding-etherrat-kit) and [`etherrat-onchain-c2-detection`](https://github.com/yankywilson/etherrat-onchain-c2-detection).
 
 I want to walk through something the public reporting has documented in pieces but has not connected. Each vendor that has touched EtherHiding — Sysdig on EtherRAT, eSentire on the retail intrusion, Kaspersky on Tsundere — has described a single smart contract or a single malware family. What you don't see in any one report is the shape of the thing all of them are standing on: one shared resolver kit, used in parallel by a North Korean implant, an Iranian APT, and a couple dozen unattributed crimeware operators, all reading their C2 out of the same family of contracts.

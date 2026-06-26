@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reverse Engineering JDY: Decrypting a Volt Typhoon-Lineage Recon Botnet"
-date: 2026-06-26 10:00:00 -0400
+date: 2026-06-26 08:00:00 -0400
 categories: [threat-intelligence, reverse-engineering]
 tags: [JDY, VoltTyphoon, botnet, MIPS, malware-analysis, OSINT, DFIR]
 ---
